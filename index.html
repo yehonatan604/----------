@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>בונה מסכים</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="form">
+                <div class="form-inputs">
+                    <div class="form-control">
+                        <label for="width-input">רוחב האלמנט</label>
+                        <div class="width-inputs-inner">
+                            <input type="number" id="width-input" name="width-input" required>
+                            <select class="select" id="select-width" required>
+                                <option id="op1">%</option>
+                                <option id="op2">px</option>
+                                <option id="op3">em</option>
+                                <option id="op4">rem</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label for="height-input">גובה האלמנט</label>
+                        <div class="width-inputs-inner">
+                            <input type="number" id="height-input" name="height-input" required>
+                            <select class="select" id="select-height" required>
+                                <option id="op1">%</option>
+                                <option id="op2">px</option>
+                                <option id="op3">em</option>
+                                <option id="op4">rem</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <label for="color-input">צבע האלמנט</label>
+                        <input type="color" id="color-input" name="color-input" value="#982f2f" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="text-input">טקסט האלמנט</label>
+                        <input type="text" id="text-input" name="text-input" value="#982f2f" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="fontSize-input">גודל פונט האלמנט</label>
+                        <div class="fontSize-inputs-inner">
+                            <input type="number" id="fontSize-input" name="fontSize-input" required>
+                            <select class="select" id="select-fontSize" required>
+                                <option id="op1">pt</option>
+                                <option id="op2">px</option>
+                                <option id="op3">em</option>
+                                <option id="op4">rem</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-control">
+                        <input type="submit" id="submit-input" name="submit-input" value="שלח">
+                    </div>
+                </div>
+            </form>
+            <div class="buttons">
+                <button id="save" class="btn">שמירה</button>
+                <button id="load" class="btn">טעינה</button>
+                <button id="clear" class="btn">ניקוי</button>
+            </div>
+        </div>
+        <div class="content-container"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
